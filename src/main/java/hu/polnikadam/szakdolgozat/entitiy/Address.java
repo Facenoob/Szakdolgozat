@@ -3,12 +3,16 @@ package hu.polnikadam.szakdolgozat.entitiy;
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jdk.jfr.Enabled;
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.Setter;
 
 @Entity
 @Getter
 @Setter
+@AllArgsConstructor
+@NoArgsConstructor
 public class Address extends AbstractEntity{
 	@Column
 	private String country;

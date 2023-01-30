@@ -2,8 +2,6 @@ package hu.polnikadam.szakdolgozat.service;
 
 import hu.polnikadam.szakdolgozat.converter.AddressConverter;
 import hu.polnikadam.szakdolgozat.dto.AddressDto;
-import hu.polnikadam.szakdolgozat.dto.AddressDto;
-import hu.polnikadam.szakdolgozat.entitiy.Address;
 import hu.polnikadam.szakdolgozat.entitiy.Address;
 import hu.polnikadam.szakdolgozat.repository.AddressRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,9 +10,9 @@ import org.springframework.stereotype.Service;
 @Service
 public class AddressService {
 	@Autowired
-	private AddressConverter addressConverter;
+	 AddressConverter addressConverter;
 	@Autowired
-	private AddressRepository addressRepository;
+	 AddressRepository addressRepository;
 
 	public AddressDto addAddress(Address address){
 		Address saveAddress = addressRepository.save(address);
